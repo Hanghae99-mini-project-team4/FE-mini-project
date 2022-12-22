@@ -75,7 +75,7 @@ function Signup() {
     [password]
   );
 
-  const onChangePasswordConfirm = useCallback((e) => {
+  const onChangePasswordConfirm = (e) => {
     const passwordConfirmCurrent = e.target.value;
     setPasswordConfirm(passwordConfirmCurrent);
 
@@ -86,7 +86,7 @@ function Signup() {
       setPasswordConfirmMessage("비밀번호가 틀려요. 다시 확인해주세요!");
       setIsPasswordConfirm(false);
     }
-  }, []);
+  };
 
   const idCheck = async (post) => {
     try {
