@@ -51,7 +51,7 @@ function LoginForm() {
         navigate(`/`);
         setCookies("id", res.headers.authorization, {
           path: "/",
-          maxAge: 240,
+          maxAge: 1750,
         });
       }
     });
